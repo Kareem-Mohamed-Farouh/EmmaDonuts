@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .cd-headline {
+            font-size: 2rem !important;
+            font-weight: 100;
+            height: 20px !important;
+    }
+    footer p{
+        font-size: 10px !important;
+    }
+}
