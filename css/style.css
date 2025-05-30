@@ -29,15 +29,6 @@ a {
   color: inherit;
 }
 
-.nav-container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  padding: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -45,33 +36,41 @@ a {
   text-decoration: none;
 }
 
-.nav-links {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  gap: 30px;
-  justify-content: center;
+.nav-link:active {
+  color: var(--primary) !important;
 }
-
-.nav-links a {
-  color: var(--text);
+.active {
+  color: var(--primary) !important;
+}
+.nav-link {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: large;
   transition: color 0.3s;
 }
-
-.nav-links a:hover {
+.call {
+  z-index: 99999;
+  height: 60px;
+  width: 60px;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+.navbar-brand {
   color: var(--primary);
 }
-
-.nav-cart {
-  position: relative;
-}
-
 .navbar-brand img {
   width: 150px;
   height: 90px;
-
   margin-left: 10px;
 }
 .cart-icon {
@@ -80,6 +79,7 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,10 +117,10 @@ a {
   justify-content: space-between;
   background: linear-gradient(
       to right,
-      rgba(16, 211, 236, 0.4),
-      rgba(255, 26, 179, 0.5)
+      rgba(0, 0, 0, 0.356),
+      rgba(135, 13, 95, 0.5)
     ),
-    url("../image/Ema/Donates Cake_1744741466717.png") no-repeat center center;
+    url("../image/Ema/donates_1744741324357.jpeg") no-repeat center center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -751,7 +751,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   gap: 50px;
   margin-bottom: 40px;
 }
@@ -867,7 +867,7 @@ footer {
   }
 
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
   }
 
   .reviews-grid {
